@@ -10,7 +10,11 @@ fn main() {
     // 두 번째 요소 (첫 번째는 프로그램명)
     let filename = &args[1];
 
-    let text = fs::read_to_string(filename).unwrap();
+    // let text = fs::read_to_string(filename).unwrap();
+    let text = fs::read_to_string(filename) {
+        Ok(v) => v,
+        Err(e) => e.to_string()
+    }
 
     println!("{}", text);
 }
