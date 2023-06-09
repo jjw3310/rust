@@ -5,9 +5,12 @@ fn main() {
 
     let astr = fs::read_to_string(afile).unwrap();
     let bstr = fs::read_to_string(bfile).unwrap();
-
+    
     let astr = astr.trim();
     let bstr = bstr.trim();
+    println!("astr {}", astr);
+    println!("bstr {}", bstr);
+
 
     if astr == bstr {
         println!("ok");

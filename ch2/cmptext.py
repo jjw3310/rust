@@ -1,5 +1,5 @@
-afile = "./fizzbuzz_python.txt"
-bfile = "./fizzbuzz_rust.txt"
+afile = "../ch1/fizzbuzz_python.txt"
+bfile = "../ch1/fizzbuzz_rust.txt"
 
 with open(afile, "r") as fp:
     astr = fp.read()
